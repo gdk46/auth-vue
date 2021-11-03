@@ -1,21 +1,16 @@
-<p align="center">
-<img src="doc/backend-bookcase.svg" width="150">
-</p>
-
 <h1 align="center">
-    <a href="https://pt-br.reactjs.org/">🔗 Title</a>
+    <a href="#/">Auth vue</a>
 </h1>
-<p align="center">🚀 escreva uma breve descrição do seu projeto aqui</p>
+<p align="center">🚀 acesse ao seu sistemas de forma rápida!!</p>
 <p align="center">
-<img src="https://img.shields.io/static/v1?label=framework&message=Laravel&color=ff2d20&style=for-the-badge&logo=laravel"/>
-<img src="https://img.shields.io/static/v1?label=framework&message=livewire&color=fb70a9&style=for-the-badge&logo=ghost"/>
-<img src="https://img.shields.io/static/v1?label=framework&message=Tailwind CSS&color=38B2AC&style=for-the-badge&logo=Tailwind css"/>
+<img src="https://img.shields.io/static/v1?label=framework&message=Vue&color=4FC08D&style=for-the-badge&logo=vue.js"/>
+<img src="https://img.shields.io/static/v1?label=framework&message=Firebase&color=FFCA28&style=for-the-badge&logo=firebase"/>
 </p>
 <p align="center">
 <img src="https://img.shields.io/badge/license-MIT-blue"/>
 <img src="https://img.shields.io/badge/npm-v16.13.1-blue"/>
 <img src="https://img.shields.io/badge/contribution-welcome-green"/>
-<img src="https://img.shields.io/badge/status project-welcome-green"/>
+<img src="https://img.shields.io/badge/status project-finished-red"/>
 </p>
 
 Índice
@@ -28,72 +23,49 @@
 * [Instalação](#instalacao)
 * [Como usar](#como-usar)
     * [Pre Requisitos](#pre-requisitos)
-* [Tests](#testes)
 * [Tecnologias](#tecnologias)
 * [Features](#features)
-* [Changelog this version](#changelog-this-version)
 * [License](#license)
 <!--te-->
 
 ## 🏁Sobre
-Este aplicativo foi desenvolvido ...
+Este aplicativo foi desenvolvido como objetivo de estudo das tecnologias vue.js e Firebase.
 
 ## :framed_picture: Screens
-imagens do projeto 
+<p align="center">
+<img src="./preview.png"/>
+</p>
 ## Estrutura de pastas
 <pre>
 Projeto/
 ├── app/
-│   └── composer.json
-├── .gitignore
-└── autoload.php
+│   └── src
+│       ├── router
+│       ├── view
+│       ├── components
+│       └── assets
+└── *
 </pre>
 
 ### Camadas da arquitetura
 pasta | camada | responsabilidade
 ------ | ------ | ------
-component_module | component | responsável por agrupar componentes burros do sistema
-
-## Boas práticas de codificação
-1. `Types`
-2. `References`
-3. `Objects`
-4. `Arrays`
-
-#### Type
-[1.1](#types--primitives) **Primitivo**: Quando você acessa um tipo primitivo, você trabalha diretamente em seu valor.
-
-- `string`
-- `number`
-- `boolean`
-- `null`
-- `undefined`
-- `symbol`
-- `bigint`
-
-```JavaScript
-const foo = 1;
-let bar = foo;
-
-bar = 9;
-
-console.log(foo, bar); // => 1, 9
-```
-- Símbolos e BigInts não podem ser fielmente polyfilled,
- então eles não devem ser usados direcionar navegadores / ambientes
- que não os suportam nativamente.
+router | view controller | caminhos para views
+view | views | camada de visão
+components | views | camada por agrupar todos pequenos components usados no sistema
+assets | resources | camadas por agrupar recursos como css, img, fontes etc.
 
 . . .
 ## 🧰 Instalação
 Utilize esse comando para clonar o repositório:
 ```GIT
-git clone https://github.com/gleissonneves/repository
+git clone https://github.com/gleissonneves/auth-vue
 ```
-Caso não deseje clonar baixe o [código fonte](https://github.com/gleissonneves/repository/archive/refs/heads/main.zip).
+Caso não deseje clonar baixe o [código fonte](https://github.com/gleissonneves/auth-vue/archive/refs/heads/master.zip).
 
 *Acesse ao diretório:*
 ```shell
-cd repository
+cd auth-vue
 ```
 
 *Instale as dependências:*
@@ -107,45 +79,28 @@ yarn install ou yarn update
 
 *inicie o servidor* 
 ```shell
-npm server
+npm run server
 ```
 *ou configure uma porta específica*
 ```shell
-npm server --port 8080
+npm run server --port 8080
 ```
 ## Como usar
   ### 🚧 Pre Requisitos 🚧
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
+[Git](https://git-scm.com), [Vue.js CLI](https://cli.vuejs.org/).
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-
-
-## :hammer_and_wrench: Tests
-```shell
-npm run test
-```
-
 ## :computer: Tecnologias
-* [Bootstrap](site)
-* [HTML](site)
-* [CSS](site)
-* [PHP](site)
+* [Bootstrap](https://getbootstrap.com/)
+* [Vue.js](https://cli.vuejs.org/)
+* [Firebase](https://firebase.google.com/products/realtime-database/?utm_source=google&utm_medium=cpc&utm_campaign=latam-BR-all-pt-dr-SKWS-all-all-trial-e-dr-1009897-LUAC0008679&utm_content=text-ad-none-any-DEV_c-CRE_429626774316-ADGP_Hybrid%20%7C%20SKWS%20-%20EXA%20%7C%20Txt%20~%20Compute_Firebase-KWID_43700066431125567-kwd-312330826250&utm_term=KW_firebase-ST_Firebase&gclid=Cj0KCQjww4OMBhCUARIsAILndv53QxzZxOyALQKkh1yNRm1yyK81AhYARf8u5TUWr3QgkHXkjUNQTYQaAiIuEALw_wcB&gclsrc=aw.ds)
 
 ## :heavy_check_mark: Features
 
 - [x] cadastro de usuário
 - [x] Sing in/Sing out
-- [ ] Dashboard
-
-. . .
-
-## Demo
-veja a [demostração](https://www.google.com).
-
-## Changelog this version
-Nota de [Versão](https://github.com/gleissonneves/repository/CHANGELOG.md).
 
 ## Licença
 Este projeto esta sobe a licença MIT.
