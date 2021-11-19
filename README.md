@@ -55,7 +55,7 @@ view | views | camada de visão
 components | views | camada por agrupar todos pequenos components usados no sistema
 assets | resources | camadas por agrupar recursos como css, img, fontes etc.
 
-. . .
+
 ## 🧰 Instalação
 Utilize esse comando para clonar o repositório:
 ```GIT
